@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import NavigationBar from "./components/nav/navigationBar";
+import './basic/_reset.scss';
+import MenuItem from "@mui/material/MenuItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ChildCareIcon from "@mui/icons-material/ChildCare";
+import ListItemText from "@mui/material/ListItemText";
+import ContentCopy from "@mui/icons-material/ContentCopy";
+import BabyChangingStationIcon from "@mui/icons-material/BabyChangingStation";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import Divider from "@mui/material/Divider";
+import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
+import MenuList from "@mui/material/MenuList";
+import React from "react";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/*<div className="header-title"></div>*/}
       </header>
+    <NavigationBar />
     </div>
   );
 }

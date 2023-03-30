@@ -1,0 +1,21 @@
+@import '../../basic/colors';
+
+.nav {
+  width: 200px;
+  position: fixed;
+  height: 100%;
+
+  .nav-link {
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: $primary;
+      border-radius: 12px;
+      color: $textColor;
+
+      svg {
+        fill: $textColor;
+      }
+    }
+  }
+}
